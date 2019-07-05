@@ -509,6 +509,8 @@ class ImageField(FileField[_FT, _FPT]):
         validators: Optional[Sequence[_Validator]] = ...,
         error_messages: Optional[Mapping[str, str]] = ...,
         style: Optional[Mapping[str, Any]] = ...,
+        allow_empty_file: bool = ...,
+        use_url: bool = ...,
     ): ...
 
 class _UnvalidatedField(Field[_FT, _FPT]): ...
